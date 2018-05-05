@@ -1,0 +1,80 @@
+body {
+    font-family: 微软雅黑, "monospace";
+}
+h3 {
+    margin: 3px 0 0 5px;
+}
+p {
+    margin: 0;
+    padding: 5px 10px 10px 10px;
+}
+div {
+    margin: 5px 0;
+    min-height: 100px;
+}
+.flex-area {
+    display: flex;
+}
+#show_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#show_area div{
+    flex-grow: 1;
+    max-height: 600px;
+    overflow: auto;
+}
+#file {
+    width: 200px;
+}
+#code_div {
+    background-color: #333;
+    border: 1px solid #333;
+}
+#code_div h3{
+    color: #fff;
+}
+#code_div p{
+    color: #fff;
+}
+
+#result_div {
+    background-color: #f1f1f1;
+}
+#result_div span{
+    font-size: 15px;
+    display: block;
+}
+#result_div span:nth-child(odd) {
+    color: rgb(222, 69, 50);
+}
+
+#predict_div {
+    background-color: #55aef6;
+}
+#predict_div table {
+    font-size: 16px;
+    margin: 5px 0 3px 5px;
+    border-collapse: collapse;
+}
+#predict_div table, td, th {
+    border: 2px solid #fff;
+}
+
+#predict_div table td, th{
+    text-align: center;
+    min-width: 100px;
+    padding: 5px;
+}
+#predict_div ul {
+    font-weight: bold;
+    color: #000;
+    list-style: none;
+    border-left: 2px solid #fff;
+    margin: 5px 0 0 5px;
+    padding-left: 10px;
+}
+#predict_div ul li{
+    color: #fff;
+}

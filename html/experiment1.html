@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/ex1.css">
+    <title>Document</title>
+</head>
+<body>
+<input type="file" id="file" />
+<div id="show_area">
+    <div id="code_div">
+        <h3>源代码</h3>
+        <p id="source_code"></p>
+    </div>
+    <div id="result_div">
+        <h3>词法分析结果</h3>
+        <p id="result_code"></p>
+    </div>
+    <div id="predict_div">
+        <h3>预测分析过程</h3>
+        <div class="flex-area">
+            <table id="predict_table">
+                <tr>
+                    <th>分析栈</th>
+                    <th>目标字符串</th>
+                    <th>动作</th>
+                </tr>
+                <tr v-for="item in result">
+                    <td>{{item.stack}}</td>
+                    <td>{{item.string}}</td>
+                    <td>{{item.action}}</td>
+                </tr>
+            </table>
+            <ul id="grammar_list">
+                应用文法：
+                <li v-for="(value, key) in grammar">
+                    <span>{{key}}=>{{value}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script src="../js/ex2.js"></script>
+<script src="../js/ex1_1.js"></script>
+<script src="../js/ex1_2.js"></script>
+</html>
